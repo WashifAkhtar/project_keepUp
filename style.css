@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.heading {
+  background-color: #ffcc00;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  color: black;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-note-sticky {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.addNote {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.addNote:hover {
+  /* background-color: #f0f0f0; */
+  background-color: #ffcc00;
+}
+
+.addNote span {
+  margin-right: 5px;
+}
+
+#notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  height: 300px;
+}
+
+.note {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  /* height: 230px; */
+}
+
+.note:hover {
+  transform: translateY(-5px);
+}
+
+.operation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.operation button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.edit i {
+  color: #5cb85c; /* Green color for edit button */
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.delete i {
+    color: #d9534f; /* Red color for delete button */
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Add hover effect for edit and delete buttons */
+.edit:hover i {
+  color: #309330; /* Darker green color on hover */
+  background: rgb(214, 214, 214);
+}
+
+.delete:hover i {
+  color: #8e3b39; /* Darker red color on hover */
+  background: rgb(214, 214, 214);
+}
+  
+.hidden{
+    display: none;
+}
+
+.main {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin-top: 50px;
+  padding: 15px;
+  word-wrap: break-word;
+  /* background: yellow; */
+}
+
+textarea {
+  /* background: red; */
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 10px; /* Added padding to match the .note padding */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
